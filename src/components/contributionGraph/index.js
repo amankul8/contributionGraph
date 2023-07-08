@@ -118,10 +118,10 @@ export const CotributionGraph =()=>{
                     <div className={styles.infoBlock}>
                         <span>Меньше</span>
                         <Box contributions={0}/>
-                        <Box contributions={5}/>
-                        <Box contributions={15}/>
-                        <Box contributions={25}/>
-                        <Box contributions={35}/>
+                        <Box contributions={1}/>
+                        <Box contributions={10}/>
+                        <Box contributions={20}/>
+                        <Box contributions={30}/>
                         <span>Больше</span>
                     </div>
                 </div>

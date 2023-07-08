@@ -9,9 +9,7 @@ export const  Box = ({contributions, date=''})=>{
     const [selected, setSelected] = useState(false);
 
     const selecthandler = ()=>{
-        if(date!==''){
-            setSelected(!selected);
-        }
+        setSelected(!selected);
     }
 
     return(
@@ -27,8 +25,16 @@ export const  Box = ({contributions, date=''})=>{
                 {
                     selected?
                     <div className={styles.tooltip}>
-                        <span className={styles.contribution}>{`${contributions} contributions`}</span>
-                        <span className={styles.date}> {format(new Date(date), 'eeee, MMMM dd yyyy', { locale: ru })} </span>
+                        <span className={styles.contribution}>{
+                            date===''? contributions===0?`${contributions} contributions`:
+                            `${contributions} - ${contributions+10} contributions`:
+                            `${contributions} contributions`
+                        }</span>
+                        <span className={styles.date}> {
+                            date===''?
+                            '':
+                            format(new Date(date), 'eeee, MMMM dd yyyy', { locale: ru })
+                        } </span>
                     </div>:
                     ''
                 }
