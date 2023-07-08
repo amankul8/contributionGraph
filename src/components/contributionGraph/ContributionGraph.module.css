@@ -1,0 +1,67 @@
+.wrapper{
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.graph{
+    display: inline-block;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.monthName{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.5px;
+    color: #959494;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.colomn{
+    display: inline-block;
+    width: 15px;
+    margin: 0 1px;
+}
+
+.weekday{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.5px;
+    color: #959494;
+    margin: 2px;
+}
+
+.infoBlock{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infoBlock span{
+    font-weight: 400;
+    font-size: 10px;
+    color: #959494;
+    line-height: 9px;
+    margin: 0 5px;
+}

@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --boxBgColor1: #EDEDED;
+  --boxBgColor2: #ACD5F2;
+  --boxBgColor3: #7FA8C9;
+  --boxBgColor4: #527BA0;
+  --boxBgColor5: #254E77;
+  --black: #000000;
+}
+
